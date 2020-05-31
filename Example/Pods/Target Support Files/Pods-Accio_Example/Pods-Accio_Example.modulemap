@@ -1,0 +1,6 @@
+framework module Pods_Accio_Example {
+  umbrella header "Pods-Accio_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

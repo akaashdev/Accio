@@ -1,0 +1,16 @@
+PODS:
+  - Accio (0.1.0)
+
+DEPENDENCIES:
+  - Accio (from `../`)
+
+EXTERNAL SOURCES:
+  Accio:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Accio: ed49ec58950eb93fef1ecfa8072097d0ff5186e9
+
+PODFILE CHECKSUM: c66e6965364b99d3ef95924e56a779f723397e5b
+
+COCOAPODS: 1.9.1

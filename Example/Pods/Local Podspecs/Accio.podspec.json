@@ -1,0 +1,23 @@
+{
+  "name": "Accio",
+  "version": "0.1.0",
+  "summary": "A short description of Accio.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/akaashdev/Accio.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Akaash Dev": "heatblast.akaash@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/akaashdev/Accio.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/akaash_dev",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Accio/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Accio {
+  umbrella header "Accio-umbrella.h"
+
+  export *
+  module * { export * }
+}
