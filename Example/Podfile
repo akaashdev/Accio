@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Accio_Example' do
+  pod 'Accio', :path => '../'
+
+  target 'Accio_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
