@@ -15,4 +15,5 @@ Accio is a Collection of Layout Util methods to help developers build Programmat
 
   s.ios.deployment_target = '10.0'
   s.source_files = 'Accio/Classes/**/*'
+  s.swift_version = '5.0'
 end

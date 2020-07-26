@@ -1,6 +1,6 @@
 # Accio
 
-[![CI Status](https://img.shields.io/travis/Akaash Dev/Accio.svg?style=flat)](https://travis-ci.org/Akaash Dev/Accio)
+[![CI Status](https://img.shields.io/travis/akaashdev/Accio.svg?style=flat)](https://travis-ci.org/akaashdev/Accio)
 [![Version](https://img.shields.io/cocoapods/v/Accio.svg?style=flat)](https://cocoapods.org/pods/Accio)
 [![License](https://img.shields.io/cocoapods/l/Accio.svg?style=flat)](https://cocoapods.org/pods/Accio)
 [![Platform](https://img.shields.io/cocoapods/p/Accio.svg?style=flat)](https://cocoapods.org/pods/Accio)
@@ -61,10 +61,13 @@ it, simply add the following line to your Podfile:
 pod 'Accio'
 ```
 
-## Author
-
-Akaash Dev, heatblast.akaash@gmail.com
-
 ## License
 
 Accio is available under the MIT license. See the LICENSE file for more info.
+
+## Author
+Akaash Dev </br>
+[hello@akaash.dev](mailto:hello@akaash.dev?Subject=Hello!)
+
+
+<a href="https://twitter.com/akaash_dev"><img src="https://raw.githubusercontent.com/akaashdev/portfolio-site/master/img/social-icons/twitter-icon-original.png" width=38px height=38px></a> &nbsp; <a href="https://linkedin.com/in/akaashdev"><img src="https://raw.githubusercontent.com/akaashdev/portfolio-site/master/img/social-icons/linkedin-icon-original.png" width=38px height=38px></a> 
