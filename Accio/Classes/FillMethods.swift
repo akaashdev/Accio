@@ -10,20 +10,20 @@ import UIKit
 
 public extension UIView {
     func fill(view: UIView? = nil, following guideType: LayoutGuideType = .none, insets: UIEdgeInsets = .zero) {
-        anchorLeading(with: view, following: guideType, padding: insets.left)
-        anchorTrailing(with: view, following: guideType, padding: -insets.right)
-        anchorTop(with: view, following: guideType, padding: insets.top)
-        anchorBottom(with: view, following: guideType, padding: -insets.bottom)
+        anchorLeading(with: view, following: guideType, padded: insets.left)
+        anchorTrailing(with: view, following: guideType, padded: insets.right)
+        anchorTop(with: view, following: guideType, padded: insets.top)
+        anchorBottom(with: view, following: guideType, padded: insets.bottom)
     }
     
-    func fillWidth(of view: UIView? = nil, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
-        anchorLeading(with: view, following: guideType, padding: padding)
-        anchorTrailing(with: view, following: guideType, padding: -padding)
+    func fillWidth(of view: UIView? = nil, following guideType: LayoutGuideType = .none, padded: CGFloat = 0) {
+        anchorLeading(with: view, following: guideType, padded: padded)
+        anchorTrailing(with: view, following: guideType, padded: padded)
     }
     
-    func fillHeight(of view: UIView? = nil, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
-        anchorTop(with: view, following: guideType, padding: padding)
-        anchorBottom(with: view, following: guideType, padding: -padding)
+    func fillHeight(of view: UIView? = nil, following guideType: LayoutGuideType = .none, padded: CGFloat = 0) {
+        anchorTop(with: view, following: guideType, padded: padded)
+        anchorBottom(with: view, following: guideType, padded: padded)
     }
 }
 

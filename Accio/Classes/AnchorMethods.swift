@@ -9,27 +9,27 @@
 import UIKit
 
 public extension UIView {
-    func anchorTop(with view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
-        constraintAnchoringTop(with: view, following: guideType).setConstant(padding).activate()
+    func anchorTop(with view: UIView? = nil, following guideType: LayoutGuideType = .none, padded offset: CGFloat = 0) {
+        constraintAnchoringTop(with: view, following: guideType).setConstant(offset).activate()
     }
     
-    func anchorBottom(with view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
-        constraintAnchoringBottom(with: view, following: guideType).setConstant(-padding).activate()
+    func anchorBottom(with view: UIView? = nil, following guideType: LayoutGuideType = .none, padded offset: CGFloat = 0) {
+        constraintAnchoringBottom(with: view, following: guideType).setConstant(-offset).activate()
     }
     
-    func anchorLeading(with view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
-        constraintAnchoringLeading(with: view, following: guideType).setConstant(padding).activate()
+    func anchorLeading(with view: UIView? = nil, following guideType: LayoutGuideType = .none, padded offset: CGFloat = 0) {
+        constraintAnchoringLeading(with: view, following: guideType).setConstant(offset).activate()
     }
     
-    func anchorTrailing(with view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
-        constraintAnchoringTrailing(with: view, following: guideType).setConstant(-padding).activate()
+    func anchorTrailing(with view: UIView? = nil, following guideType: LayoutGuideType = .none, padded offset: CGFloat = 0) {
+        constraintAnchoringTrailing(with: view, following: guideType).setConstant(-offset).activate()
     }
     
-    func anchorLeft(with view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
-        constraintAnchoringLeft(with: view, following: guideType).setConstant(padding).activate()
+    func anchorLeft(with view: UIView? = nil, following guideType: LayoutGuideType = .none, padded offset: CGFloat = 0) {
+        constraintAnchoringLeft(with: view, following: guideType).setConstant(offset).activate()
     }
     
-    func anchorRight(with view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
-        constraintAnchoringRight(with: view, following: guideType).setConstant(-padding).activate()
+    func anchorRight(with view: UIView? = nil, following guideType: LayoutGuideType = .none, padded offset: CGFloat = 0) {
+        constraintAnchoringRight(with: view, following: guideType).setConstant(-offset).activate()
     }
 }

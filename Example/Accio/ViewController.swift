@@ -27,17 +27,27 @@ class ViewController: UIViewController {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.backgroundColor = .systemGreen
     }
+    
+    private lazy var blueView: UIView = create {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.backgroundColor = .systemBlue
+    }
 
     private func setupViews() {
         view.addSubview(redView)
         view.addSubview(greenView)
+        view.addSubview(blueView)
     }
     
     private func setupConstraints() {
-        redView.fill(following: .layoutMargins)
+        redView.fill(following: .layoutMargins, insets: .all(10))
         
         greenView.setConstantSize(width: 250, height: 250)
         greenView.alignCenter()
+        
+        blueView.setConstantHeight(100)
+        blueView.anchorBottom(padded: 70)
+        blueView.fillWidth(padded: 30)
     }
     
 }
