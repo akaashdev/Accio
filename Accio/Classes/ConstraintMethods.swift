@@ -58,8 +58,8 @@ extension UIView {
     private func constraintAnchoring(_ anchorType: AnchorType, of view: UIView?, following guideType: LayoutGuideType) -> NSLayoutConstraint {
         guard let viewB = getViewB(from: view) else { fatalError() }
         return anchorType.isXAxis
-            ? constraintAnchoring(anchorType.xAxisAnchor(of: self), with: anchorType.xAxisAnchor(of: viewB, following: guideType))
-            : constraintAnchoring(anchorType.yAxisAnchor(of: self), with: anchorType.yAxisAnchor(of: viewB, following: guideType))
+            ? Helper.constraintAnchoring(anchorType.xAxisAnchor(of: self), with: anchorType.xAxisAnchor(of: viewB, following: guideType))
+            : Helper.constraintAnchoring(anchorType.yAxisAnchor(of: self), with: anchorType.yAxisAnchor(of: viewB, following: guideType))
     }
     
     private func getViewB(from view: UIView?) -> UIView? {
