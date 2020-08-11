@@ -9,7 +9,6 @@
 import UIKit
 
 public extension UIView {
-    
     func fill(view: UIView? = nil, following guideType: LayoutGuideType = .none, insets: UIEdgeInsets = .zero) {
         anchorLeading(with: view, following: guideType, padding: insets.left)
         anchorTrailing(with: view, following: guideType, padding: -insets.right)
@@ -26,12 +25,10 @@ public extension UIView {
         anchorTop(with: view, following: guideType, padding: padding)
         anchorBottom(with: view, following: guideType, padding: -padding)
     }
-    
 }
 
 
 public extension UIView {
-    
     func alignCenter(with view: UIView? = nil, following guideType: LayoutGuideType = .none, offset: CGPoint = .zero) {
         alignHorizontallyCenter(with: view, following: guideType, xOffset: offset.x)
         alignVerticallyCenter(with: view, following: guideType, yOffset: offset.y)
@@ -44,5 +41,4 @@ public extension UIView {
     func alignVerticallyCenter(with view: UIView? = nil, following guideType: LayoutGuideType = .none, yOffset: CGFloat = 0) {
         constraintAnchoringCenterY(with: view, following: guideType).setConstant(yOffset).activate()
     }
-    
 }

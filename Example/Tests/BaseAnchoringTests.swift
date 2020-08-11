@@ -10,7 +10,6 @@ import XCTest
 @testable import Accio
 
 class BaseAnchoringTests: XCTestCase {
-    
     let guides: [LayoutGuideType] = [.none, .layoutMargins, .readable, .safeArea]
     let paddings: [CGFloat] = [12, 16]
     
@@ -162,5 +161,4 @@ class BaseAnchoringTests: XCTestCase {
         )
         XCTAssertEqual(constraint.constant, anchorType.usesNegativeOffset ? -padding : padding)
     }
-    
 }

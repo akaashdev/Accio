@@ -9,7 +9,6 @@
 import UIKit
 
 extension NSLayoutConstraint {
-    
     @discardableResult
     func activate() -> NSLayoutConstraint {
         isActive = true
@@ -33,12 +32,10 @@ extension NSLayoutConstraint {
         self.constant = constant
         return self
     }
-    
 }
 
 
 extension Array where Element: NSLayoutConstraint {
-    
     @discardableResult
     func activate() -> [Element] {
         forEach { $0.activate() }
@@ -62,5 +59,4 @@ extension Array where Element: NSLayoutConstraint {
         forEach { $0.setConstant(constant) }
         return self
     }
-    
 }

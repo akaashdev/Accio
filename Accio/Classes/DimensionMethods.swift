@@ -9,7 +9,6 @@
 import UIKit
 
 public extension UIView {
-    
     func setConstantWidth(_ width: CGFloat) {
         Helper.setConstant(width, for: widthAnchor).activate()
     }
@@ -33,12 +32,10 @@ public extension UIView {
     func setMaximumHeight(_ height: CGFloat) {
         Helper.setMaximum(value: height, for: heightAnchor).activate()
     }
-    
 }
 
 
 public extension UIView {
-    
     func setConstantSize(width: CGFloat, height: CGFloat) {
         setConstantWidth(width)
         setConstantHeight(height)
@@ -53,12 +50,10 @@ public extension UIView {
         setMaximumWidth(width)
         setMaximumHeight(height)
     }
-    
 }
 
 
 public extension UIView {
-    
     func setWidth(relativeTo dimension: NSLayoutDimension, multipliedBy factor: CGFloat = 1, constant: CGFloat = 0) {
         Helper.setDimension(widthAnchor, relativeTo: dimension, multipliedBy: factor)
             .setConstant(constant)
@@ -94,5 +89,4 @@ public extension UIView {
             .setConstant(constant)
             .activate()
     }
-    
 }

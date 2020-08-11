@@ -9,7 +9,6 @@
 import UIKit
 
 public extension UIView {
-    
     @discardableResult
     func constraintAnchoringTop(with view: UIView?, following guideType: LayoutGuideType = .none) -> NSLayoutConstraint {
         return constraintAnchoring(.top, of: view, following: guideType)
@@ -49,12 +48,10 @@ public extension UIView {
     func constraintAnchoringCenterY(with view: UIView?, following guideType: LayoutGuideType = .none) -> NSLayoutConstraint {
         return constraintAnchoring(.centerY, of: view, following: guideType)
     }
-    
 }
 
 
 extension UIView {
-    
     private func constraintAnchoring(_ anchorType: AnchorType, of view: UIView?, following guideType: LayoutGuideType) -> NSLayoutConstraint {
         guard let viewB = getViewB(from: view) else { fatalError() }
         return anchorType.isXAxis
@@ -72,5 +69,4 @@ extension UIView {
         print("No parent view to anchor with.")
         return nil
     }
-    
 }

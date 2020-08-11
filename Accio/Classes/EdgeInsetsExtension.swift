@@ -9,7 +9,6 @@
 import UIKit
 
 public extension UIEdgeInsets {
-    
     static func all(_ inset: CGFloat) -> UIEdgeInsets {
         return UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
     }
@@ -25,5 +24,4 @@ public extension UIEdgeInsets {
     static func only(top: CGFloat = 0, left: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0) -> UIEdgeInsets {
         return UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
     }
-    
 }

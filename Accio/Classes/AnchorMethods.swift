@@ -9,7 +9,6 @@
 import UIKit
 
 public extension UIView {
-    
     func anchorTop(with view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
         constraintAnchoringTop(with: view, following: guideType).setConstant(padding).activate()
     }
@@ -33,5 +32,4 @@ public extension UIView {
     func anchorRight(with view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) {
         constraintAnchoringRight(with: view, following: guideType).setConstant(-padding).activate()
     }
-    
 }

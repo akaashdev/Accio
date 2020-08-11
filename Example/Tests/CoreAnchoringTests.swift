@@ -10,7 +10,6 @@ import XCTest
 @testable import Accio
 
 class CoreAnchoringTests: XCTestCase {
-
     var viewA: UIView!
     var viewB: UIView!
 
@@ -119,5 +118,4 @@ class CoreAnchoringTests: XCTestCase {
         let constraint = Helper.greaterThanOrEqualToConstraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor)
         XCTAssertEqual(constraint.relation, NSLayoutConstraint.Relation.greaterThanOrEqual)
     }
-
 }
