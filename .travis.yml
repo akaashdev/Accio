@@ -3,6 +3,7 @@ language: swift
 branches:
  only:
  - master
+ - codecov-integ
 script:
 - set -o pipefail && xcodebuild -workspace Example/Accio.xcworkspace -scheme Accio-Example -destination 'platform=iOS Simulator,OS=13.4.1,name=iPhone 11' test | xcpretty
 - pod lib lint
