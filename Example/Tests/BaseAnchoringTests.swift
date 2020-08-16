@@ -24,37 +24,37 @@ class BaseAnchoringTests: XCTestCase {
     
     func testAnchorTop() {
         checkAnchorMethods(type: .top) { viewA, viewB, guide, padding in
-            viewA.anchorTop(with: viewB, following: guide, padded: padding)
+            viewA.anchorTop(with: viewB, following: guide, padding: padding)
         }
     }
     
     func testAnchorBottom() {
         checkAnchorMethods(type: .bottom) { viewA, viewB, guide, padding in
-            viewA.anchorBottom(with: viewB, following: guide, padded: padding)
+            viewA.anchorBottom(with: viewB, following: guide, padding: padding)
         }
     }
     
     func testAnchorLeading() {
         checkAnchorMethods(type: .leading) { viewA, viewB, guide, padding in
-            viewA.anchorLeading(with: viewB, following: guide, padded: padding)
+            viewA.anchorLeading(with: viewB, following: guide, padding: padding)
         }
     }
     
     func testAnchorTrailing() {
         checkAnchorMethods(type: .trailing) { viewA, viewB, guide, padding in
-            viewA.anchorTrailing(with: viewB, following: guide, padded: padding)
+            viewA.anchorTrailing(with: viewB, following: guide, padding: padding)
         }
     }
     
     func testAnchorLeft() {
         checkAnchorMethods(type: .left) { viewA, viewB, guide, padding in
-            viewA.anchorLeft(with: viewB, following: guide, padded: padding)
+            viewA.anchorLeft(with: viewB, following: guide, padding: padding)
         }
     }
     
     func testAnchorRight() {
         checkAnchorMethods(type: .right) { viewA, viewB, guide, padding in
-            viewA.anchorRight(with: viewB, following: guide, padded: padding)
+            viewA.anchorRight(with: viewB, following: guide, padding: padding)
         }
     }
     

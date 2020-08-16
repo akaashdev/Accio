@@ -46,8 +46,8 @@ class ViewController: UIViewController {
         greenView.alignCenter()
         
         blueView.setConstantHeight(100)
-        blueView.anchorBottom(padded: 70)
-        blueView.fillWidth(padded: 30)
+        blueView.anchorBottom(padding: 70)
+        blueView.fillWidth(padding: 30)
     }
     
 }

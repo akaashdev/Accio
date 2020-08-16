@@ -20,12 +20,12 @@ class CoreAnchoringTests: XCTestCase {
     }
 
     func testConstraintAnchoring_withDirectCases() {
-        let topConstraint = Helper.constraintAnchoring(viewA.topAnchor, with: viewB.topAnchor)
-        let bottomConstraint = Helper.constraintAnchoring(viewA.bottomAnchor, with: viewB.bottomAnchor)
-        let leadingConstraint = Helper.constraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor)
-        let trailingConstraint = Helper.constraintAnchoring(viewA.trailingAnchor, with: viewB.trailingAnchor)
-        let leftConstraint = Helper.constraintAnchoring(viewA.leftAnchor, with: viewB.leftAnchor)
-        let rightConstraint = Helper.constraintAnchoring(viewA.rightAnchor, with: viewB.rightAnchor)
+        let topConstraint = Helper.constraintAnchoring(viewA.topAnchor, with: viewB.topAnchor, offset: 0)
+        let bottomConstraint = Helper.constraintAnchoring(viewA.bottomAnchor, with: viewB.bottomAnchor, offset: 0)
+        let leadingConstraint = Helper.constraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor, offset: 0)
+        let trailingConstraint = Helper.constraintAnchoring(viewA.trailingAnchor, with: viewB.trailingAnchor, offset: 0)
+        let leftConstraint = Helper.constraintAnchoring(viewA.leftAnchor, with: viewB.leftAnchor, offset: 0)
+        let rightConstraint = Helper.constraintAnchoring(viewA.rightAnchor, with: viewB.rightAnchor, offset: 0)
 
         XCTAssertEqual(viewA.topAnchor, topConstraint.firstAnchor)
         XCTAssertEqual(viewA.leadingAnchor, leadingConstraint.firstAnchor)
@@ -44,9 +44,9 @@ class CoreAnchoringTests: XCTestCase {
 
     func testAllCoreAnchoringMethods_anchorOrdering() {
         func check<Anchor>(_ viewAAnchor: NSLayoutAnchor<Anchor>, _ viewBAnchor: NSLayoutAnchor<Anchor>) {
-            let constraint = Helper.constraintAnchoring(viewAAnchor, with: viewBAnchor)
-            let lessConstraint = Helper.lessThanOrEqualToConstraintAnchoring(viewAAnchor, with: viewBAnchor)
-            let greatConstraint = Helper.greaterThanOrEqualToConstraintAnchoring(viewAAnchor, with: viewBAnchor)
+            let constraint = Helper.constraintAnchoring(viewAAnchor, with: viewBAnchor, offset: 0)
+            let lessConstraint = Helper.lessThanOrEqualToConstraintAnchoring(viewAAnchor, with: viewBAnchor, offset: 0)
+            let greatConstraint = Helper.greaterThanOrEqualToConstraintAnchoring(viewAAnchor, with: viewBAnchor, offset: 0)
 
             XCTAssertEqual(viewAAnchor, constraint.firstAnchor)
             XCTAssertEqual(viewBAnchor, constraint.secondAnchor)
@@ -73,9 +73,9 @@ class CoreAnchoringTests: XCTestCase {
 
     func testAllCoreAnchoringMethods_mixingAnchors_sameAnchors() {
         func check<Anchor>(_ viewAAnchor: NSLayoutAnchor<Anchor>, _ viewBAnchor: NSLayoutAnchor<Anchor>) {
-            let constraint = Helper.constraintAnchoring(viewAAnchor, with: viewBAnchor)
-            let lessConstraint = Helper.lessThanOrEqualToConstraintAnchoring(viewAAnchor, with: viewBAnchor)
-            let greatConstraint = Helper.greaterThanOrEqualToConstraintAnchoring(viewAAnchor, with: viewBAnchor)
+            let constraint = Helper.constraintAnchoring(viewAAnchor, with: viewBAnchor, offset: 0)
+            let lessConstraint = Helper.lessThanOrEqualToConstraintAnchoring(viewAAnchor, with: viewBAnchor, offset: 0)
+            let greatConstraint = Helper.greaterThanOrEqualToConstraintAnchoring(viewAAnchor, with: viewBAnchor, offset: 0)
 
             XCTAssertNotEqual(viewBAnchor, constraint.firstAnchor)
             XCTAssertNotEqual(viewAAnchor, constraint.secondAnchor)
@@ -105,17 +105,17 @@ class CoreAnchoringTests: XCTestCase {
 
 
     func testConstraintAnchoring_relation() {
-        let constraint = Helper.constraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor)
+        let constraint = Helper.constraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor, offset: 0)
         XCTAssertEqual(constraint.relation, NSLayoutConstraint.Relation.equal)
     }
     
     func testLessThanOrEqualToConstraintAnchoring_relation() {
-        let constraint = Helper.lessThanOrEqualToConstraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor)
+        let constraint = Helper.lessThanOrEqualToConstraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor, offset: 0)
         XCTAssertEqual(constraint.relation, NSLayoutConstraint.Relation.lessThanOrEqual)
     }
 
     func testGreaterThanOrEqualToConstraintAnchoring_relation() {
-        let constraint = Helper.greaterThanOrEqualToConstraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor)
+        let constraint = Helper.greaterThanOrEqualToConstraintAnchoring(viewA.leadingAnchor, with: viewB.leadingAnchor, offset: 0)
         XCTAssertEqual(constraint.relation, NSLayoutConstraint.Relation.greaterThanOrEqual)
     }
 }

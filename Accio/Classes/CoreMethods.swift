@@ -10,16 +10,16 @@ import UIKit
 
 final class Helper {
     // MARK: Anchor Methods
-    class func constraintAnchoring<Anchor>(_ anchor: NSLayoutAnchor<Anchor>, with otherAnchor: NSLayoutAnchor<Anchor>) -> NSLayoutConstraint {
-        return anchor.constraint(equalTo: otherAnchor)
+    class func constraintAnchoring<Anchor>(_ anchor: NSLayoutAnchor<Anchor>, with otherAnchor: NSLayoutAnchor<Anchor>, offset: CGFloat) -> NSLayoutConstraint {
+        return anchor.constraint(equalTo: otherAnchor, constant: offset)
     }
     
-    class func lessThanOrEqualToConstraintAnchoring<Anchor>(_ anchor: NSLayoutAnchor<Anchor>, with otherAnchor: NSLayoutAnchor<Anchor>) -> NSLayoutConstraint {
-        return anchor.constraint(lessThanOrEqualTo: otherAnchor)
+    class func lessThanOrEqualToConstraintAnchoring<Anchor>(_ anchor: NSLayoutAnchor<Anchor>, with otherAnchor: NSLayoutAnchor<Anchor>, offset: CGFloat) -> NSLayoutConstraint {
+        return anchor.constraint(lessThanOrEqualTo: otherAnchor, constant: offset)
     }
     
-    class func greaterThanOrEqualToConstraintAnchoring<Anchor>(_ anchor: NSLayoutAnchor<Anchor>, with otherAnchor: NSLayoutAnchor<Anchor>) -> NSLayoutConstraint {
-        return anchor.constraint(greaterThanOrEqualTo: otherAnchor)
+    class func greaterThanOrEqualToConstraintAnchoring<Anchor>(_ anchor: NSLayoutAnchor<Anchor>, with otherAnchor: NSLayoutAnchor<Anchor>, offset: CGFloat) -> NSLayoutConstraint {
+        return anchor.constraint(greaterThanOrEqualTo: otherAnchor, constant: offset)
     }
     
     // MARK: Dimension Methods
