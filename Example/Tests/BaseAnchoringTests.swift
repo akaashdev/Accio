@@ -7,10 +7,9 @@
 //
 
 import XCTest
-import Accio
+@testable import Accio
 
 class BaseAnchoringTests: XCTestCase {
-    
     let guides: [LayoutGuideType] = [.none, .layoutMargins, .readable, .safeArea]
     let paddings: [CGFloat] = [12, 16]
     
@@ -134,7 +133,7 @@ class BaseAnchoringTests: XCTestCase {
         }
     }
     
-    func checkAnchorMethods(type: AnchorType, methodInvocation: (UIView, UIView, LayoutGuideType, CGFloat)->()) {
+    private func checkAnchorMethods(type: AnchorType, methodInvocation: (UIView, UIView, LayoutGuideType, CGFloat)->()) {
         var viewA: UIView! = nil
         var viewB: UIView! = nil
         paddings.forEach { padding in
@@ -150,7 +149,7 @@ class BaseAnchoringTests: XCTestCase {
         }
     }
     
-    func checkConstraintCorrectness(_ constraint: NSLayoutConstraint, viewA: UIView, viewB: UIView, anchorType: AnchorType, guideType: LayoutGuideType, padding: CGFloat) {
+    private func checkConstraintCorrectness(_ constraint: NSLayoutConstraint, viewA: UIView, viewB: UIView, anchorType: AnchorType, guideType: LayoutGuideType, padding: CGFloat) {
         XCTAssertTrue(constraint.firstItem is UIView) // First Item should only be UIView
         XCTAssertFalse(constraint.firstItem is UILayoutGuide) // First Item should not be UILayoutGuide
         XCTAssertEqual(constraint.firstItem as! NSObject, viewA)
@@ -162,5 +161,4 @@ class BaseAnchoringTests: XCTestCase {
         )
         XCTAssertEqual(constraint.constant, anchorType.usesNegativeOffset ? -padding : padding)
     }
-    
 }

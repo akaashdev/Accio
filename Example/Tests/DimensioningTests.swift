@@ -10,7 +10,6 @@ import XCTest
 import Accio
 
 class DimensioningTests: XCTestCase {
-    
     let testValues: [CGFloat] = [100, 200, 300, 400, 500]
     let testFactors: [CGFloat] = [0.1, 0.25, 1.34, 2.4]
     
@@ -58,5 +57,4 @@ class DimensioningTests: XCTestCase {
             viewA.removeConstraint(constraint)
         }
     }
-    
 }

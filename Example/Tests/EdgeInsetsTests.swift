@@ -10,7 +10,6 @@ import XCTest
 import Accio
 
 class EdgeInsetsTests: XCTestCase {
-    
     let testValues: [CGFloat] = [24, 32, 48, 54]
     
     func testInsetsAll() {
@@ -135,5 +134,4 @@ class EdgeInsetsTests: XCTestCase {
         XCTAssertEqual(insets.bottom, vals[1])
         XCTAssertEqual(insets.right, vals[2])
     }
-    
 }
