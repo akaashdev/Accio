@@ -8,4 +8,4 @@ script:
 - set -o pipefail && xcodebuild -workspace Example/Accio.xcworkspace -scheme Accio-Example -destination 'platform=iOS Simulator,OS=13.4.1,name=iPhone 11' test | xcpretty
 - pod lib lint
 after_success:
-- bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash) -J 'Accio' -X xcodellvm

@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Accio.svg?style=flat)](https://cocoapods.org/pods/Accio)
 [![License](https://img.shields.io/cocoapods/l/Accio.svg?style=flat)](https://cocoapods.org/pods/Accio)
 [![Platform](https://img.shields.io/cocoapods/p/Accio.svg?style=flat)](https://cocoapods.org/pods/Accio)
+[![codecov](https://codecov.io/gh/akaashdev/Accio/branch/master/graph/badge.svg)](https://codecov.io/gh/akaashdev/Accio)
 
 Accio is a Collection of Layout Util methods to help developers build Programmatic UI very fast and easy. It completely follows AutoLayout under the hood. It uses declarative approach to do stuff. The main goal of Accio is to remove huge chunks of redundant constraints methods and have a more readable and simple code.
 
