@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension NSLayoutConstraint {
+public extension NSLayoutConstraint {
     @discardableResult
     func activate() -> NSLayoutConstraint {
         isActive = true
@@ -35,7 +35,7 @@ extension NSLayoutConstraint {
 }
 
 
-extension Array where Element: NSLayoutConstraint {
+public extension Array where Element: NSLayoutConstraint {
     @discardableResult
     func activate() -> [Element] {
         forEach { $0.activate() }

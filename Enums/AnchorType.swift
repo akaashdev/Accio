@@ -8,7 +8,7 @@
 
 import UIKit
 
-public enum AnchorType {
+enum AnchorType {
     enum Axis {
         case x, y
     }
@@ -19,17 +19,11 @@ public enum AnchorType {
     static let yAxisAnchors: Set<AnchorType> = [.top, .bottom, centerY]
     static let negativeOffsetAnchors: Set<AnchorType> = [.trailing, .right, .bottom]
     
-    var axis: Axis {
-        if AnchorType.xAxisAnchors.contains(self) { return .x }
-        if AnchorType.yAxisAnchors.contains(self) { return .y }
-        fatalError("Unknown AnchorType found.")
-    }
+    var isXAxis: Bool { return AnchorType.xAxisAnchors.contains(self) }
     
-    public var isXAxis: Bool { return axis == .x }
+    var isYAxis: Bool { return AnchorType.yAxisAnchors.contains(self) }
     
-    public var isYAxis: Bool { return axis == .y }
-    
-    public var usesNegativeOffset: Bool { return AnchorType.negativeOffsetAnchors.contains(self) }
+    var usesNegativeOffset: Bool { return AnchorType.negativeOffsetAnchors.contains(self) }
     
     func xAxisAnchor(of view: UIView, following guideType: LayoutGuideType? = nil) -> NSLayoutXAxisAnchor {
         let layoutGuide = guideType?.layoutGuide(of: view)
