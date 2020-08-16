@@ -1,6 +1,6 @@
 //
 //  ConstraintMethods.swift
-//  ViewUtilsApp
+//  Accio
 //
 //  Created by Akaash Dev on 26/05/20.
 //  Copyright © 2020 Akaash Dev. All rights reserved.
@@ -50,7 +50,7 @@ public extension UIView {
     }
 }
 
-extension UIView {
+public extension UIView {
     func constraintsFillingWidth(of view: UIView?, following guideType: LayoutGuideType = .none, padding: CGFloat = 0) -> [NSLayoutConstraint] {
         return [constraintAnchoringLeading(with: view, following: guideType, padding: padding),
                 constraintAnchoringTrailing(with: view, following: guideType, padding: padding)]

@@ -1,6 +1,6 @@
 //
 //  LayoutGuideType.swift
-//  ViewUtilsApp
+//  Accio
 //
 //  Created by Akaash Dev on 30/05/20.
 //  Copyright © 2020 Akaash Dev. All rights reserved.

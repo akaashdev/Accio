@@ -1,6 +1,6 @@
 //
 //  ConstraintExtension.swift
-//  ViewUtilsApp
+//  Accio
 //
 //  Created by Akaash Dev on 26/05/20.
 //  Copyright © 2020 Akaash Dev. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension NSLayoutConstraint {
+public extension NSLayoutConstraint {
     @discardableResult
     func activate() -> NSLayoutConstraint {
         isActive = true
@@ -35,7 +35,7 @@ extension NSLayoutConstraint {
 }
 
 
-extension Array where Element: NSLayoutConstraint {
+public extension Array where Element: NSLayoutConstraint {
     @discardableResult
     func activate() -> [Element] {
         forEach { $0.activate() }

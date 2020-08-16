@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0807D61724E978B40095C944 /* EdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807D61424E978B40095C944 /* EdgeInsetsExtension.swift */; };
+		0807D61824E978B40095C944 /* ConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807D61524E978B40095C944 /* ConstraintExtension.swift */; };
+		0807D61924E978B40095C944 /* ViewCreationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807D61624E978B40095C944 /* ViewCreationHelpers.swift */; };
+		0807D61C24E978C50095C944 /* LayoutGuideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807D61A24E978C50095C944 /* LayoutGuideType.swift */; };
+		0807D61D24E978C50095C944 /* AnchorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807D61B24E978C50095C944 /* AnchorType.swift */; };
 		115F9B5142D814D3395408DE64A69A31 /* CoreMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4D7F1108B256708C1C47D50BCC2EC /* CoreMethods.swift */; };
 		1ACBB2844A5B97D3412B53D83C7651E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		1C65DFAFECA8CCE3923F4991F8B9C612 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3E9288F45BE9F7D861EE3F4DF5B90E12 /* Pods-Accio_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F635E9F376A36F377CB2B3B0A58B0 /* Pods-Accio_Example-dummy.m */; };
 		448B04ECA70DC7B4087C1F9BA398BC29 /* Pods-Accio_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC97A0CC9E79EB1FBDFA930C1C578168 /* Pods-Accio_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46A4FF8BE2FDEDFDAD44117E4ABD136B /* AnchorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02263B9F2E80C7D762DA77CA8EB10A3C /* AnchorType.swift */; };
 		5C97442E5A24A3E289B47682B3225159 /* Pods-Accio_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB81AA44EC5BF665CFB7FD32F2B738 /* Pods-Accio_Tests-dummy.m */; };
 		5FA5A7CC74AA67DBDFFA598B3B40C132 /* DimensionMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54715BA96B97D0A1125E1E448C9DB354 /* DimensionMethods.swift */; };
-		6ABAE56190F388EEB1CED9B3CCC6EB72 /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446230ABDF3FC153D1045EE739B8EB5 /* HelperMethods.swift */; };
 		7B55C223883838E1BC10552142BDB0CF /* Accio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B26F5061ADAC6DB80EFC6F8629FD8 /* Accio-dummy.m */; };
 		84A6867506B76BC598F2CB5351B82DB3 /* Accio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0275F2231F0A31FFA1656551C5143B /* Accio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D4AAF39F8C7B6C6F6A1B12E5C02B476 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A97BF798926C9D5B983DA97D611B962D /* ConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0824205C6C3C9D1C5A976F7F85DA248C /* ConstraintExtension.swift */; };
-		C233F76164FC1ACA425FF192F62C8D73 /* EdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449F53D372CA8A0CF5F6A4E9D0077A1 /* EdgeInsetsExtension.swift */; };
 		E615DE6FEAEB0EAD5D4271A9F04DCA35 /* ConstraintMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A77FA921F7989B3E051CD34E4625CC /* ConstraintMethods.swift */; };
 		EFDA364609B4B9478E099CE6E91D5A65 /* Pods-Accio_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58562BF0BD9F914CA3DF2E5984724D8B /* Pods-Accio_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F203F691BE684D3B82F5AC9BBB86A13D /* LayoutGuideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC068C237D1D3B17EB4DD7E95316FC7 /* LayoutGuideType.swift */; };
 		FCDDCA5285C3A2B6C6525FD5A848267F /* AnchorMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD80AAA1C368CAF77C2F0BCECC97B2E3 /* AnchorMethods.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02263B9F2E80C7D762DA77CA8EB10A3C /* AnchorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnchorType.swift; path = Accio/Classes/AnchorType.swift; sourceTree = "<group>"; };
-		0824205C6C3C9D1C5A976F7F85DA248C /* ConstraintExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintExtension.swift; path = Accio/Classes/ConstraintExtension.swift; sourceTree = "<group>"; };
+		0807D61424E978B40095C944 /* EdgeInsetsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EdgeInsetsExtension.swift; path = ../Accio/Classes/Utils/EdgeInsetsExtension.swift; sourceTree = "<group>"; };
+		0807D61524E978B40095C944 /* ConstraintExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstraintExtension.swift; path = ../Accio/Classes/Utils/ConstraintExtension.swift; sourceTree = "<group>"; };
+		0807D61624E978B40095C944 /* ViewCreationHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewCreationHelpers.swift; path = ../Accio/Classes/Utils/ViewCreationHelpers.swift; sourceTree = "<group>"; };
+		0807D61A24E978C50095C944 /* LayoutGuideType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutGuideType.swift; path = ../Accio/Classes/Enums/LayoutGuideType.swift; sourceTree = "<group>"; };
+		0807D61B24E978C50095C944 /* AnchorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnchorType.swift; path = ../Accio/Classes/Enums/AnchorType.swift; sourceTree = "<group>"; };
 		083C3EC0BF45787EC2D937FD6BDDA91F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0879FDF65A2EBB0BA50751D8EF0376DE /* Accio-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Accio-prefix.pch"; sourceTree = "<group>"; };
 		16A77FA921F7989B3E051CD34E4625CC /* ConstraintMethods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMethods.swift; path = Accio/Classes/ConstraintMethods.swift; sourceTree = "<group>"; };
@@ -67,7 +70,6 @@
 		5AF8ABACC50FD850930DE793F801C7DF /* Pods-Accio_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Accio_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5FDEA6D1C0A1A127CDF2FDED2B0432E1 /* Pods-Accio_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Accio_Tests-Info.plist"; sourceTree = "<group>"; };
 		707F8FB60C7662F9FE89BA68225DA2FF /* Pods_Accio_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Accio_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7449F53D372CA8A0CF5F6A4E9D0077A1 /* EdgeInsetsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsetsExtension.swift; path = Accio/Classes/EdgeInsetsExtension.swift; sourceTree = "<group>"; };
 		7A6E2B8AD26E306E4B11FDB16D4CB009 /* Pods-Accio_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Accio_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		958F635E9F376A36F377CB2B3B0A58B0 /* Pods-Accio_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Accio_Example-dummy.m"; sourceTree = "<group>"; };
 		9C5EC61E49D89725CEC8D856AE0E9503 /* Accio-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Accio-Info.plist"; sourceTree = "<group>"; };
@@ -79,12 +81,10 @@
 		BA474B5C9EB780A7C3232FADCF9CECE9 /* Pods-Accio_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Accio_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BC97A0CC9E79EB1FBDFA930C1C578168 /* Pods-Accio_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Accio_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D0B43B9029F33E36CCB852B433C91E56 /* Accio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Accio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D446230ABDF3FC153D1045EE739B8EB5 /* HelperMethods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HelperMethods.swift; path = Accio/Classes/HelperMethods.swift; sourceTree = "<group>"; };
 		D87D3F5DEDDEBCCAB4516AE5028D9465 /* Pods-Accio_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Accio_Example-Info.plist"; sourceTree = "<group>"; };
 		E5EDBD5BFADEB33256B5085E874B2D00 /* Pods-Accio_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Accio_Example.modulemap"; sourceTree = "<group>"; };
 		E7FEC3E86075B1A01874561F917CC4B2 /* Accio.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Accio.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ECCB81AA44EC5BF665CFB7FD32F2B738 /* Pods-Accio_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Accio_Tests-dummy.m"; sourceTree = "<group>"; };
-		FBC068C237D1D3B17EB4DD7E95316FC7 /* LayoutGuideType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuideType.swift; path = Accio/Classes/LayoutGuideType.swift; sourceTree = "<group>"; };
 		FE67506B9B9445B51D7527CB40FF5C98 /* Pods-Accio_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Accio_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +116,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0807D60E24E961690095C944 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0807D61B24E978C50095C944 /* AnchorType.swift */,
+				0807D61A24E978C50095C944 /* LayoutGuideType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		0807D60F24E961720095C944 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0807D61524E978B40095C944 /* ConstraintExtension.swift */,
+				0807D61424E978B40095C944 /* EdgeInsetsExtension.swift */,
+				0807D61624E978B40095C944 /* ViewCreationHelpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		15D78D620E21400906D255442A62984F /* Pods-Accio_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,14 +166,11 @@
 			isa = PBXGroup;
 			children = (
 				AD80AAA1C368CAF77C2F0BCECC97B2E3 /* AnchorMethods.swift */,
-				02263B9F2E80C7D762DA77CA8EB10A3C /* AnchorType.swift */,
-				0824205C6C3C9D1C5A976F7F85DA248C /* ConstraintExtension.swift */,
 				16A77FA921F7989B3E051CD34E4625CC /* ConstraintMethods.swift */,
 				2AA4D7F1108B256708C1C47D50BCC2EC /* CoreMethods.swift */,
 				54715BA96B97D0A1125E1E448C9DB354 /* DimensionMethods.swift */,
-				7449F53D372CA8A0CF5F6A4E9D0077A1 /* EdgeInsetsExtension.swift */,
-				D446230ABDF3FC153D1045EE739B8EB5 /* HelperMethods.swift */,
-				FBC068C237D1D3B17EB4DD7E95316FC7 /* LayoutGuideType.swift */,
+				0807D60F24E961720095C944 /* Utils */,
+				0807D60E24E961690095C944 /* Enums */,
 				F4D59ED089524CFB910809ADCF446393 /* Pod */,
 				62E583D589DF6E88049A8FC55EF02930 /* Support Files */,
 			);
@@ -405,15 +421,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B55C223883838E1BC10552142BDB0CF /* Accio-dummy.m in Sources */,
+				0807D61C24E978C50095C944 /* LayoutGuideType.swift in Sources */,
+				0807D61924E978B40095C944 /* ViewCreationHelpers.swift in Sources */,
 				FCDDCA5285C3A2B6C6525FD5A848267F /* AnchorMethods.swift in Sources */,
-				46A4FF8BE2FDEDFDAD44117E4ABD136B /* AnchorType.swift in Sources */,
-				A97BF798926C9D5B983DA97D611B962D /* ConstraintExtension.swift in Sources */,
+				0807D61D24E978C50095C944 /* AnchorType.swift in Sources */,
+				0807D61824E978B40095C944 /* ConstraintExtension.swift in Sources */,
+				0807D61724E978B40095C944 /* EdgeInsetsExtension.swift in Sources */,
 				E615DE6FEAEB0EAD5D4271A9F04DCA35 /* ConstraintMethods.swift in Sources */,
 				115F9B5142D814D3395408DE64A69A31 /* CoreMethods.swift in Sources */,
 				5FA5A7CC74AA67DBDFFA598B3B40C132 /* DimensionMethods.swift in Sources */,
-				C233F76164FC1ACA425FF192F62C8D73 /* EdgeInsetsExtension.swift in Sources */,
-				6ABAE56190F388EEB1CED9B3CCC6EB72 /* HelperMethods.swift in Sources */,
-				F203F691BE684D3B82F5AC9BBB86A13D /* LayoutGuideType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
